@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correctPassword= "Asad123"
+let attempts=0
+let isLoggedIn= false
+while(attempts < 3 && !isLoggedIn){
+    let usserPassword=prompt('enter you Password')
+    if (correctPassword==usserPassword) {
+        console.log('Password Successfull')
+        isLoggedIn = true
+    } else {
+        attempts++
+        console.log('incorrect Password you have',3-attempts, 'atempts')
+
+    }
+}
+if(isLoggedIn){
+    console.log('incorrect Password Please Try Again',attempts)
+}
+    </script>
+</body>
+</html>
